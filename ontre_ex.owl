@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_v3#"
+     xml:base="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_v3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontre_ex="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#"
+     xmlns:ontre_v4_filled="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_v4_filled#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasAction">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasRelatedActor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Action"/>
+        <rdfs:comment>{&quot;askable&quot;:True, &quot;cardinality&quot;: &quot;multiple&quot;}</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasAttribute">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Concept"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Concept"/>
+        <rdfs:comment>{&quot;askable&quot;:True, &quot;cardinality&quot;: &quot;multiple&quot;}</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasDiscourseAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasDiscourseAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Discourse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Action"/>
+        <rdfs:comment>{&quot;askable&quot;:False, &quot;cardinality&quot;: &quot;multiple&quot;}</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasDiscourseActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasDiscourseActor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Discourse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Actor"/>
+        <rdfs:comment>{&quot;askable&quot;:True, &quot;cardinality&quot;: &quot;multiple&quot;}</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasDiscourseConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasDiscourseConcept">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Discourse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Concept"/>
+        <rdfs:comment>{&quot;askable&quot;:False, &quot;cardinality&quot;: &quot;multiple&quot;}</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasRelatedActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasRelatedActor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Actor"/>
+        <rdfs:comment>{&quot;askable&quot;:False, &quot;cardinality&quot;: &quot;multiple&quot;}</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasRelatedConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasRelatedConcept">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Concept"/>
+        <rdfs:comment>{&quot;askable&quot;:True, &quot;cardinality&quot;: &quot;single&quot;}</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasActionVerb -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasActionVerb">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>{&quot;askable&quot;:False, &quot;cardinality&quot;: &quot;multiple&quot;}</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>{&quot;askable&quot;:False, &quot;cardinality&quot;: &quot;multiple&quot;}</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasRole -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasRole">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>{&quot;askable&quot;:False, &quot;cardinality&quot;: &quot;multiple&quot;}</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Action">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasActionVerb"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>{&quot;answer_properties&quot;:[&quot;hasActionVerb&quot;, &quot;hasRelatedConcept&quot;]}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Actor">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasAttribute"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Concept"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasRole"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Concept"/>
+        <rdfs:comment>{&quot;answer_properties&quot;:[&quot;hasRole&quot;]}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Concept">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasAttribute"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Concept"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Discourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Discourse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Object">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#hasName"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Concept"/>
+        <rdfs:comment>{&quot;answer_properties&quot;:[&quot;hasName&quot;]}</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#baker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#baker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Actor"/>
+        <ontre_ex:hasAction rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#makes"/>
+        <ontre_ex:hasAttribute rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#name"/>
+        <ontre_ex:hasRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baker</ontre_ex:hasRole>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#bread -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#bread">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Object"/>
+        <ontre_ex:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bread</ontre_ex:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#designs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#designs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Action"/>
+        <ontre_ex:hasRelatedActor rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#electrical_engineer"/>
+        <ontre_ex:hasRelatedConcept rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#electrical_circuit"/>
+        <ontre_ex:hasActionVerb rdf:datatype="http://www.w3.org/2001/XMLSchema#string">designs</ontre_ex:hasActionVerb>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#discourse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#discourse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Discourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#electrical_circuit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#electrical_circuit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Object"/>
+        <ontre_ex:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrical_circuit</ontre_ex:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#electrical_engineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#electrical_engineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Actor"/>
+        <ontre_ex:hasAction rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#designs"/>
+        <ontre_ex:hasAttribute rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#id"/>
+        <ontre_ex:hasAttribute rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#toolbox"/>
+        <ontre_ex:hasRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electrical_engineer</ontre_ex:hasRole>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#email -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#email">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Object"/>
+        <ontre_ex:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">email</ontre_ex:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#id -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#id">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Object"/>
+        <ontre_ex:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id</ontre_ex:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#makes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#makes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Action"/>
+        <ontre_ex:hasRelatedActor rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#baker"/>
+        <ontre_ex:hasRelatedConcept rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#bread"/>
+        <ontre_ex:hasActionVerb rdf:datatype="http://www.w3.org/2001/XMLSchema#string">makes</ontre_ex:hasActionVerb>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#name -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#name">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Object"/>
+        <ontre_ex:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">name</ontre_ex:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#profile_picture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#profile_picture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Object"/>
+        <ontre_ex:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">profile_picture</ontre_ex:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#toolbox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#toolbox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Object"/>
+        <ontre_ex:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toolbox</ontre_ex:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#uploads -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#uploads">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Action"/>
+        <ontre_ex:hasRelatedActor rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#user"/>
+        <ontre_ex:hasRelatedConcept rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#profile_picture"/>
+        <ontre_ex:hasActionVerb rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uploads</ontre_ex:hasActionVerb>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#user -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#user">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Actor"/>
+        <ontre_ex:hasAction rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#uploads"/>
+        <ontre_ex:hasAttribute rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#email"/>
+        <ontre_ex:hasAttribute rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#username"/>
+        <ontre_ex:hasRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">user</ontre_ex:hasRole>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#username -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#username">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2021/2/ontre_ex#Object"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
